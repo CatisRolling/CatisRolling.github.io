@@ -38,7 +38,7 @@ test('has footer', async ({page}) => {
 test('has at least one section', async ({page}) => {
   await page.goto(process.env.BASE_URL);
   const section = page.locator('section').first();
-  await expect(section).not.toBeEmpty();
+  await expect(section).toBeAttached();
 });
 
 test('has at least one paragraph', async ({page}) => {
@@ -61,7 +61,7 @@ test('has an img element', async ({page}) => {
 
 test('img element has src attribute', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const img = page.locator('img');
+  const img = page.locator('img').first();
   await expect(img).toHaveAttribute('src');
 });
 
