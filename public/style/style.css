@@ -41,13 +41,13 @@ h2, h3, h4, h5, h6 {
 html {
   font-family: "blue-winter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 100; /* normal */
   font-style: normal;
   font-size: 12pt;
 }
 
 header {
-    background: var(--webco-color-gray);
+    background: var(--webco-color-grey);
     height: 3rem;
     align-items: center;
     display: grid;

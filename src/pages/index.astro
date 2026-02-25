@@ -5,14 +5,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Lorem Ipsum";
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<section aria-labelledby = "primary-heading">
-		<h1 class = "centered" id = "primary-heading">{pageTitle}</h1>
-		<div class = "full__three_column gap__3_rem">
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-		</div>
-	</section>
 	<Band bandTitle = "Lorem Ipsum">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut libero eu 
 		justo mattis vulputate. Etiam accumsan sollicitudin turpis, a aliquam arcu. Donec 
@@ -24,6 +16,14 @@ const pageTitle = "Lorem Ipsum";
 		consectetur felis sem, ut interdum orci ornare non. Donec cursus massa non euismod 
 		luctus.
 	</Band>
+	<section aria-labelledby = "primary-heading">
+		<h1 class = "centered" id = "primary-heading">{pageTitle}</h1>
+		<div class = "full__three_column gap__3_rem">
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+		</div>
+	</section>
 	<section aria-labelledby = "news-heading">
 		<h2 id = "news-heading" class = "centered">News Ipsum</h2>
 		<div class = "full__four_column container text__column">
