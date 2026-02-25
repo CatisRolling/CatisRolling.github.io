@@ -1,8 +1,11 @@
 ---
 import Navigation from './Navigation.astro'
+const platform = "github"
+const username = "CatisRolling"
 ---
 <header>
-    <strong>WebCo</strong>
+    <strong>Soren Ausmus</strong>
+    <a href = {"https://" + platform + ".com/" + username}>{platform}</a>
     <form id = "search">
         <input name = "search" type = "text" class = "input__rounded">
     </form>
