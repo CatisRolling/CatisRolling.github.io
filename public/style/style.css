@@ -10,10 +10,20 @@
     --webco-white: #fff;
 }
 
+@font-face {
+  font-family: 'BlueWinter'; /* A name you choose for the font */
+  src: url('/fonts/Blue-Winter.woff2') format('woff2'),
+       url('/fonts/Blue-Winter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Controls font loading behavior */
+}
+
 * {
     margin: 0;
     line-height: 2rem;
     color: var(--webco-printer-black);
+    font-family: 'BlueWinter', ui-rounded;
 }
 
 ul, li, i, b, em, strong {
