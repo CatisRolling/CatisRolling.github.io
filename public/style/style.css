@@ -4,7 +4,7 @@
 }
 
 :root {
-    --webco-color-purple-bg: #219432;
+    --webco-color-purple-bg: #116c1e;
     --webco-color-gray: #D9D9D9;
     --webco-printer-black: #222;
     --webco-white: #fff;
@@ -107,7 +107,7 @@ article {
 
 article p {
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
