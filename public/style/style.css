@@ -223,14 +223,35 @@ h2.centered {
 .text__column {
     grid-gap: 2rem;
 }
+@media screen and (max-width: 850px) {
+    
+    .full__three_column, .full__four_column {
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        row-gap: 3rem;
+        column-gap: 0;
+    }
+}
 
 @media screen and (max-width: 767px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        height: unset;
+    }   
 
   nav {
      grid-column: span 2;
   }
   
+  
   .full__three_column, .full__four_column {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 3rem;
     column-gap: 0;
