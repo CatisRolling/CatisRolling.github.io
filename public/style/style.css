@@ -108,10 +108,36 @@ blockquote {
 th, td {
     border: 1px solid var(--webco-color-gray);
 }
+#menu {
+    position: relative;
+}
 
 #search {
     margin: 0 auto;
     width: 100%;
+    position: relative;
+}
+#search button {
+    background: none;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    top: .5rem;
+    border: none;
+}
+.mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+}
+.mode-toggle input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    background: var(--webco-color-black);
+    border-radius: 20px;
 }
 
 .full__three_column {
@@ -147,6 +173,11 @@ th, td {
     padding: .25rem;
     width: calc(100% - 1rem);
     text-align: center;
+}
+
+.fa-search {
+    color: var(--webco-printer-black);
+    background-color: var(--webco-white);
 }
 
 .article__border_right:not(:last-of-type) {
