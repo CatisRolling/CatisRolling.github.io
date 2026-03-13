@@ -9,9 +9,15 @@
     --webco-printer-black: #222;
     --webco-white: #fff;
 }
+
 :root[data-theme="dark"] {
     background: var(--webco-printer-black);
 }
+
+:root[data-theme="dark"] header , :root[data-theme="dark"] footer {
+    background: var(--webco-white);
+}
+
 
 * {
     margin: 0;
@@ -131,9 +137,10 @@ th, td {
 .mode-toggle {
     position: relative;
     display: inline-block;
-    top: 125rem;
+    top: .125rem;
     width: 2rem;
     height: 1rem;
+    margin-left: 1rem;
 }
 .mode-toggle input {
     display: none;
@@ -147,6 +154,7 @@ th, td {
     left: 0;
     right: 0;
     bottom: 0;
+    transition: .4s;
 }
 
 .slider::before {
@@ -157,6 +165,7 @@ th, td {
     height: 1rem;
     border-radius: 1rem;
     left: 0;
+    transition: .4s;
 }
 
 input:checked + .slider {
@@ -165,7 +174,7 @@ input:checked + .slider {
 
 input:checked + .slider::before {
     transform: translateX(1rem);
-
+    background-color: var(--webco-color-purple-bg);
 }
 
 .full__three_column {
